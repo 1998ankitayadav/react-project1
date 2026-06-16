@@ -6,7 +6,8 @@ function Cart({ cart, removeFromCart, increaseQty, decreaseQty, darkMode}) {
   
   return (
     <div style={{ textAlign: "center",
-      color: darkMode ? "#fff" : "#000"
+      color: darkMode ? "#bb8b8b" : "#8e2b2b"
+        
      }}>
       <h2>Cart Items</h2>
 

@@ -39,24 +39,32 @@ function Home({addToCart,darkMode, setDarkMode}){
             textAlign:"center",
             minHeight:"100vh",
             padding:"20px"
+
             }}>
             <button onClick={() => setDarkMode(!darkMode)}
-            style={{marginLeft:"10px",
-                padding:"10px",
+            style={{marginLeft:"-1px",
+                marginTop:"10px",
+                padding:"0px",
                 cursor:"pointer"
+                // ,marginBottom:"1px"
             }}
             >
-            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            {darkMode ? "☀️" : "🌙"}
             </button>
-            <h2>products</h2>
+            <h2 style={{
+             color:darkMode ? "#c08e8e" : "#8f5858",
+            fontFamily:"monospace" //Montserrat,Helvetica,Arial,sans-serif,monospace
+
+            }}>Products</h2>
             <div
             style={{
             display:"flex",
             justifyContent:"center",
             alignItems:"center",
-            gap:"10px",
+            gap:"20px",
             flexWrap:"wrap",
             marginBottom:"20px"
+
             }}
             >
 
@@ -69,7 +77,7 @@ function Home({addToCart,darkMode, setDarkMode}){
             style={{
                 padding:"10px",
                 width:"250px",
-                border:"1px solid #ccc",
+                border:"1px solid #f0eaea",
                 borderRadius:"8px"
               
             }}

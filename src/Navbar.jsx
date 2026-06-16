@@ -6,9 +6,14 @@ function Navbar({cartCount, darkMode}) {
          justifyContent: "space-between", //dono ends
          padding: "10px 20px",
          alignItems: "center", // same line
-         background: darkMode ? "#111" : "#0f172a",
-         color: "white",
-         position: "sticky",
+        //  background: darkMode ? "#744e25" : "#351919",
+        background:"#926464",
+         color: "#382a2a",
+         position: "fixed",
+         left: 0, 
+         width: "100%",
+         boxSizing: "border-box",
+        
          top: 0
          }}>
             <h2 style={{margin:0}}>MyShop</h2>

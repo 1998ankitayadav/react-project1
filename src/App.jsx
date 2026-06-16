@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Cart from "./Cart";
+import Footer from "./Footer";
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -88,6 +89,7 @@ function App() {
       />
     </Routes> 
     </div>
+    <Footer />
     </BrowserRouter>
   );
 }
